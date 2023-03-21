@@ -5,16 +5,6 @@ class UsersFactory():
     def get(self,id):
         return User(self.database, id)
 
-def registered(f): 
-    def wrapper(*args): 
-        user = args[0]
-
-        if user.info is None: 
-            user.register()
-        
-        return f(*args)
-    return wrapper
-
 class User(): 
     info = {
         "id": int,
@@ -29,6 +19,16 @@ class User():
         "bio": str,
         "registration_state": str, 
     }
+
+    def registered(f): 
+        def wrapper(*args): 
+            user = args[0]
+
+            if user.info is None: 
+                user.register()
+            
+            return f(*args)
+        return wrapper
 
     def __init__(self, database, id) -> None:
         self.id = id
@@ -53,3 +53,4 @@ class User():
 
     def register(self, info): 
         self.info = self.database.create_user(info)
+    
