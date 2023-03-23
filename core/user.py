@@ -1,7 +1,10 @@
+from cachetools import cached, MRUCache
+
 class UsersFactory(): 
     def __init__(self, database) -> None:
         self.database = database
 
+    @cached(MRUCache(512))
     def get(self,id):
         return User(self.database, id)
 

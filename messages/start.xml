@@ -1,0 +1,12 @@
+<message>
+    <text>
+        <b>Привет, я простой ботик 👋🏿</b>
+        
+        Попробуй зарегистрироваться и найти приятного собеседника
+    </text>
+    <inline-keyboard resize_keyboard="True">
+        <button callback_data="register">
+            Регистрация 🚀
+        </button>
+    </inline-keyboard>
+</message>

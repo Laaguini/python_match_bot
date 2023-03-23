@@ -1,0 +1,12 @@
+<message>
+    <text>
+        <b>nimus_match_bot v1.0.0 </b>
+
+        commands: 
+
+        <code>/start    </code>: Start messaging with bot
+        <code>/help     </code>: Get list of necessary commands
+        <code>/info     </code>: Get bot dev info
+        <code>/register </code>: Start registration
+    </text>
+</message>

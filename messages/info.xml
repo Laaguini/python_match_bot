@@ -1,0 +1,12 @@
+<message>
+    <text>
+        <b>nimus_match_bot v1.0.0</b>
+
+        simple clone of @leomatchbot
+
+        made with aiogram, sqlite3, and love ❤️
+    </text>
+    <inline-keyboard>
+        <button url="https://github.com/Laaguini/python_match_bot">Github 🫵🏿</button>
+    </inline-keyboard>
+</message>

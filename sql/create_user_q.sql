@@ -7,6 +7,5 @@ INSERT INTO users (
     preferred_age_max, 
     gender, 
     preferred_gender, 
-    bio, 
-    registration_state
-) VALUES (?,?,?,?,?,?,?,?,?, 0)
+    bio
+) VALUES (?,?,?,?,?,?,?,?,?)

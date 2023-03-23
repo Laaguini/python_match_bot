@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS users (
-    id INTEGER NOT NULL, 
+    id INTEGER PRIMARY KEY, 
     username TEXT NOT NULL, 
     name TEXT, 
     age INTEGER, 
@@ -7,8 +7,7 @@ CREATE TABLE IF NOT EXISTS users (
     preferred_age_max INTEGER, 
     gender TEXT, 
     preferred_gender TEXT,
-    bio TEXT, 
-    registration_state INTEGER 
+    bio TEXT
 );
 
 CREATE TABLE IF NOT EXISTS user_pictures (
